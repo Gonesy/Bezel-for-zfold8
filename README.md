@@ -1,40 +1,40 @@
 # Bezel (for zfold8)
 
-**语言：中文 | [English](README.en.md)**
+**Language: [中文](README.zh-CN.md) | English**
 
-为 Samsung Galaxy Z Fold 8 截图添加手机边框的原生 Android 小工具，使用 Kotlin + Jetpack Compose 开发。
+A native Android utility that adds device frames to screenshots from the Samsung Galaxy Z Fold 8. Built with Kotlin and Jetpack Compose.
 
-## 下载与安装
+## Download and install
 
-前往 [Releases 下载页](https://github.com/Gonesy/Bezel-for-zfold8/releases/latest)，下载 `.apk` 文件，在手机上打开安装。
+Visit the [Releases page](https://github.com/Gonesy/Bezel-for-zfold8/releases/latest), download the `.apk` file, and open it on your phone to install.
 
-- 系统要求：Android 12 或更高版本。
-- 当前版本：1.0。
-- 若之前安装过调试版，需先卸载调试版再安装正式版；卸载会清除本地应用设置。
+- Requires Android 12 or later.
+- Current version: 1.0.
+- If you previously installed a debug build, uninstall it before installing the release build. Uninstalling clears the app's local settings.
 
-## 可以做什么
+## Features
 
-- 从相册选择截图或图片。
-- 根据图片比例自动选择内屏或外屏边框，也可以手动切换。
-- 选择薰衣草紫、石墨黑、奶油色三种边框。
-- 调整背景颜色，将带边框的图片保存到相册。
+- Select a screenshot or image from your gallery.
+- Automatically choose the inner or cover screen frame based on the image ratio, with a manual selection option.
+- Choose from lavender, graphite, and cream device frames.
+- Adjust the background color and save the framed image to your gallery.
 
-## 使用方法
+## How to use
 
-1. 打开 Bezel，点击 **Pick Image** 选择图片。
-2. 在编辑页选择屏幕类型、边框颜色和背景颜色。
-3. 点击右上角 **Save**，等待保存完成后到相册查看。
+1. Open Bezel and tap **Pick Image** to choose an image.
+2. Select the screen type, frame color, and background color on the editor screen.
+3. Tap **Save** in the upper-right corner, then find the finished image in your gallery.
 
-## 从源码运行
+## Run from source
 
-用支持本项目 Android Gradle Plugin 9.4.0 的 Android Studio 打开项目，安装 Android SDK 37，完成 Gradle 同步后点击 Run。Gradle 守护进程使用 JDK 25，配置见 `gradle/gradle-daemon-jvm.properties`。
+Open the project in a version of Android Studio that supports Android Gradle Plugin 9.4.0. Install Android SDK 37, complete the Gradle sync, and click Run. The Gradle daemon uses JDK 25 as configured in `gradle/gradle-daemon-jvm.properties`.
 
-也可以在项目目录执行：
+You can also run the following command in the project directory:
 
 ```bash
 ./gradlew assembleDebug
 ```
 
-调试 APK 输出位置：`app/build/outputs/apk/debug/app-debug.apk`。
+The debug APK is generated at `app/build/outputs/apk/debug/app-debug.apk`.
 
-正式版构建与签名说明见 [docs/release.md](docs/release.md)。签名密钥不包含在仓库中；自行构建正式版需要自己的签名配置。
+See [docs/release.md](docs/release.md) for release build and signing instructions. Signing keys are not included in this repository; use your own signing configuration to build a release APK.
