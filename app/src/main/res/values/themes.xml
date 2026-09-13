@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.Bezel" parent="Theme.MaterialComponents.Light" />
+</resources>
