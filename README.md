@@ -1,5 +1,7 @@
 # Bezel (for zfold8)
 
+**语言：中文 | [English](README.en.md)**
+
 为 Samsung Galaxy Z Fold 8 截图添加手机边框的原生 Android 小工具，使用 Kotlin + Jetpack Compose 开发。
 
 ## 下载与安装
